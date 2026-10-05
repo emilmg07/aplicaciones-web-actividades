@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+    <!-- Se repite el mismo layout general para mantener consistencia entre páginas. -->
+    <header class="encabezado">
+        <!-- El alt hace que el isologotipo tenga una alternativa textual accesible. -->
+        <a class="marca" href="index.html" aria-label="Ir al inicio de Retiro Sustentable">
+            <img class="logo" src="./recursos/imagenes/logo-rs.svg" alt="Isologotipo de Retiro Sustentable">
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#catalogo">Cabañas</a></li>
+                <li><a href="reservas.html" aria-current="page">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <!-- section agrupa la introducción y el formulario de una misma tarea: consultar una reserva. -->
+        <section class="reservas" aria-labelledby="titulo-reservas">
+            <h1 id="titulo-reservas">Reservas</h1>
+            <p>Completá tus datos y las fechas de interés para consultar disponibilidad.</p>
+
+            <!-- POST es apropiado para datos enviados por una persona. En esta práctica no hay
+            backend, por eso action queda en la misma página como destino de demostración. -->
+            <form class="formulario" action="reservas.html" method="post" autocomplete="on">
+                <div class="campo">
+                    <label for="nombre">Nombre de la persona que consulta</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="Ej.: 351 555 1234" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="nombre@correo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha-desde">Fecha desde</label>
+                    <input type="date" id="fecha-desde" name="fecha_desde" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha-hasta">Fecha hasta</label>
+                    <input type="date" id="fecha-hasta" name="fecha_hasta" required>
+                </div>
+
+                <div class="campo campo-completo">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Contanos cuántas personas se alojarían o cualquier consulta adicional."></textarea>
+                </div>
+
+                <div class="campo-completo acciones-formulario">
+                    <button type="submit">Enviar consulta</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 Retiro Sustentable. Estudio Copan Arquitectura.</p>
+    </footer>
+</body>
+</html>

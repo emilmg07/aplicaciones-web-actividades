@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Cabañas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+    <!-- header es semántico porque reúne la identidad del sitio y la navegación principal. -->
+    <header class="encabezado">
+        <!-- El logo enlaza al inicio. El alt describe la imagen para lectores de pantalla
+        y también aporta contexto si el recurso visual no puede cargarse. -->
+        <a class="marca" href="index.html" aria-label="Ir al inicio de Retiro Sustentable">
+            <img class="logo" src="./recursos/imagenes/logo-rs.svg" alt="Isologotipo de Retiro Sustentable">
+        </a>
+
+        <!-- nav identifica el menú principal y facilita la navegación accesible. -->
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <!-- Este enlace interno permite una navegación tipo SPA dentro del catálogo,
+                porque cambia de sección sin cargar otro documento HTML. -->
+                <li><a href="#catalogo">Cabañas</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main contiene el contenido principal y único de esta página. -->
+    <main class="contenido">
+        <section class="presentacion" aria-labelledby="titulo-principal">
+            <h1 id="titulo-principal">Cabañas para alquiler en San Javier</h1>
+            <p>
+                Descubrí cuatro cabañas totalmente equipadas al pie de la montaña,
+                en San Javier, Traslasierra, Córdoba. Elegí la opción que mejor se
+                adapte a tu estadía y consultá disponibilidad desde la página de reservas.
+            </p>
+        </section>
+
+        <!-- section agrupa artículos del mismo tema: las cabañas disponibles. -->
+        <section class="catalogo" id="catalogo" aria-labelledby="titulo-catalogo">
+            <h2 id="titulo-catalogo">Nuestro catálogo</h2>
+
+            <!-- article se usa porque cada cabaña puede entenderse como una unidad independiente. -->
+            <article class="cabana">
+                <img src="./recursos/imagenes/modelo1.webp" alt="Exterior de la cabaña Modelo 1 rodeada de naturaleza">
+                <div class="cabana-contenido">
+                    <h3>Cabaña Modelo 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Espacio cálido, funcional y equipado para descansar en contacto con la naturaleza.</p>
+                    <p class="precio">$85.000 por día</p>
+                    <a class="boton-reserva" href="reservas.html">Reservar</a>
+                </div>
+            </article>
+
+            <article class="cabana">
+                <img src="./recursos/imagenes/modelo2.webp" alt="Exterior de la cabaña Modelo 2 en las sierras de Córdoba">
+                <div class="cabana-contenido">
+                    <h3>Cabaña Modelo 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Una propuesta moderna y confortable para disfrutar de una estadía tranquila en las sierras.</p>
+                    <p class="precio">$95.000 por día</p>
+                    <a class="boton-reserva" href="reservas.html">Reservar</a>
+                </div>
+            </article>
+
+            <article class="cabana">
+                <img src="./recursos/imagenes/modelo3.webp" alt="Exterior de la cabaña Modelo 3 de Retiro Sustentable">
+                <div class="cabana-contenido">
+                    <h3>Cabaña Modelo 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pensada para quienes buscan comodidad, privacidad y contacto directo con el entorno natural.</p>
+                    <p class="precio">$105.000 por día</p>
+                    <a class="boton-reserva" href="reservas.html">Reservar</a>
+                </div>
+            </article>
+
+            <article class="cabana">
+                <img src="./recursos/imagenes/modelo4.webp" alt="Exterior de la cabaña Modelo 4 ubicada al pie de la montaña">
+                <div class="cabana-contenido">
+                    <h3>Cabaña Modelo 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Una alternativa amplia y equipada para vivir una experiencia de descanso en Traslasierra.</p>
+                    <p class="precio">$115.000 por día</p>
+                    <a class="boton-reserva" href="reservas.html">Reservar</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- footer representa semánticamente el pie general del sitio. -->
+    <footer class="pie">
+        <p>&copy; 2026 Retiro Sustentable. Estudio Copan Arquitectura.</p>
+    </footer>
+</body>
+</html>
