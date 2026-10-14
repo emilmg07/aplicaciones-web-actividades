@@ -2,9 +2,9 @@
 // Alumno: Emil Layun
 // Estructuras de control condicionales y bucles
 
-// ================================
+
 // ESTRUCTURAS CONDICIONALES
-// ================================
+
 
 // Ejercicio 1: Verificar si una persona es mayor de edad.
 const edad = 20;
@@ -32,9 +32,8 @@ if (nota < 4) {
     console.log('Excelente');
 }
 
-// ================================
+
 // ESTRUCTURAS DE CONTROL: BUCLES
-// ================================
 
 // Ejercicio 4: Imprimir los números del 1 al 10.
 for (let i = 1; i <= 10; i++) {
