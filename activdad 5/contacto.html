@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Martín Herrera</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario de Contacto</h1>
+        <h2>Servicio Técnico - Martín Herrera</h2>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Realizá tu consulta</h2>
+
+            <p>
+                Si necesitás reparar tu computadora o
+                realizar una consulta sobre mis servicios,
+                completá el siguiente formulario con
+                tus datos y una descripción del problema.
+            </p>
+        </section>
+
+        <section>
+            <h2>Datos del cliente</h2>
+
+            <form action="#" method="get">
+
+                <label for="nombre">
+                    Nombre completo:
+                </label>
+                <br>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                >
+
+                <br><br>
+
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+                <br>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    required
+                >
+
+                <br><br>
+
+                <label for="telefono">
+                    Número de teléfono:
+                </label>
+                <br>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                >
+
+                <br><br>
+
+                <label for="equipo">
+                    Tipo de equipo:
+                </label>
+                <br>
+                <select id="equipo" name="equipo" required>
+                    <option value="">Seleccionar</option>
+                    <option value="pc">PC de escritorio</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <br><br>
+
+                <label for="servicio">
+                    Servicio requerido:
+                </label>
+                <br>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Seleccionar</option>
+                    <option value="diagnostico">
+                        Diagnóstico de equipo
+                    </option>
+                    <option value="reparacion">
+                        Reparación
+                    </option>
+                    <option value="instalacion">
+                        Instalación de sistema operativo
+                    </option>
+                    <option value="mantenimiento">
+                        Mantenimiento preventivo
+                    </option>
+                    <option value="actualizacion">
+                        Actualización de componentes
+                    </option>
+                    <option value="otro">
+                        Otra consulta
+                    </option>
+                </select>
+
+                <br><br>
+
+                <label for="mensaje">
+                    Descripción del problema:
+                </label>
+                <br>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="6"
+                    cols="45"
+                    placeholder="Describí el problema de tu equipo..."
+                    required
+                ></textarea>
+
+                <br><br>
+
+                <button type="submit">
+                    Enviar consulta
+                </button>
+
+                <button type="reset">
+                    Limpiar formulario
+                </button>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Martín Herrera - Servicio Técnico Informático</p>
+        <p>Córdoba Capital, Argentina</p>
+
+        <a href="index.html">Volver al inicio</a>
+
+        <p>&copy; 2026 - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
